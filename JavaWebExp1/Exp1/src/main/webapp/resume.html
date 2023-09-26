@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>设置简历</title>	
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+  </head>
+  
+  <body>
+  
+    <h1 align="center">设置简历</h1>
+  
+    <form name="f1" id="f1" action="GetResume" method="post" >
+
+      <p align="center"><span style="vertical-align:top">头像：</span>
+                             <input type="image" name="头像" src="img\profile.jpg" width="100" height="100">
+      <p align="center">姓名：<input type="text" name="姓名" size="7" maxlength=5>
+      <p align="center">性别：<input type="radio" name="性别" value=男> 男 
+                              <input type="radio" name="性别" value=女> 女
+      <p align="center">出生日期：<input type="date" name="出生日期" size="10">
+      <p align="center">毕业院校：<input type="text" name="毕业院校" size="15">
+      <p align="center">最高学历：
+                             <select  name="最高学历" width="50"  size="1">
+	                          <option value="硕士" > 硕士 </option>
+	                          <option value="博士" > 博士 </option>
+                             </select>
+      <p align="center">研究领域：
+                             <input type="checkbox" name="研究领域" value=计算机视觉> 计算机视觉
+                             <input type="checkbox" name="研究领域" value=自然语言处理> 自然语言处理 
+      <p align="center"><span style="vertical-align:top">个人简介：</span><textarea name="个人简介" rows=5  cols=50></textarea>
+      
+      <br/><br/>
+
+      <input type="submit" value=" 提交">   
+      <input type="reset" value="重置" onclick="window.location.href='resume.html'">
+        
+    </form>
+  </body>
+</html>
