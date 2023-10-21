@@ -1,0 +1,23 @@
+
+<%--创建Bean的实例 --%>
+<jsp:useBean id="bbean" type="bean.Abean" scope="request"/>
+<%--将前面生成的loginBean的属性一次性与表单元素绑定 --%>
+<jsp:setProperty name="bbean" property="*" />
+
+<%--创建Bean的实例 --%>
+<jsp:useBean id="cbean" type="bean.Abean" scope="session"/>
+<%--将前面生成的loginBean的属性一次性与表单元素绑定 --%>
+<jsp:setProperty name="cbean" property="*" />
+
+<%--创建Bean的实例 --%>
+<jsp:useBean id="dbean" type="bean.Abean" scope="application"/>
+<%--将前面生成的loginBean的属性一次性与表单元素绑定 --%>
+<jsp:setProperty name="dbean" property="*" />
+
+
+<jsp:useBean id="bbean" type="bean.Abean" scope="request"/>
+<p>姓名：<jsp:getProperty name="bbean" property="name" />
+<p>性别：<jsp:getProperty name="bbean" property="sex" />
+<p>出生日期：<jsp:getProperty name="bbean" property="birthday" />
+<p>最高学历：<jsp:getProperty name="bbean" property="degree" />
+<p>个人简介：<jsp:getProperty name="bbean" property="bio" />
